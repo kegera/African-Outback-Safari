@@ -1,0 +1,64 @@
+/* Import variables and mixins if needed */
+/* @import url('../../../sassStyles/_variables.css'); */
+/* @import url('../../../sassStyles/_mixins.css'); */
+
+.inputField__label {
+    display: grid;
+    grid-row-gap: 10px;
+    color: var(--secondary2);
+    font-size: 16px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    font-family: 'Poppins', sans-serif;
+  
+    @media (min-width: 576px) {
+      font-size: 18px;
+    }
+  }
+  
+  .inputField__field {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primaryDark3);
+    border: none;
+    font-size: 16px;
+    padding: 16px 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    font-weight: bold;
+    color: var(--secondary2);
+  
+    @media (min-width: 576px) {
+      font-size: 18px;
+      padding: 20px 25px;
+    }
+  }
+  
+  ::placeholder {
+    font-weight: normal;
+    color: var(--primary);
+  }
+  
+  :-ms-input-placeholder {
+    color: var(--primary);
+    font-weight: normal;
+  }
+  
+  ::-ms-input-placeholder {
+    color: var(--primary);
+    font-weight: normal;
+  }
+  
+  input[disabled] {
+    background-color: var(--primaryDark2);
+    cursor: default;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+  
+    &:hover {
+      background-color: var(--primaryDark2);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+      transform: scale(1);
+    }
+  }
+  
