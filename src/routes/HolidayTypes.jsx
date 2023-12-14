@@ -119,13 +119,9 @@ const HolidayTypes = () => {
             alt=""
           />
           <div>
-            <h2>Cruise Adventure</h2>
+            <h2>Safari Adventure</h2>
             <p>
-              Sail away on a maritime journey that combines exploration, luxury,
-              and breathtaking vistas. Our cruise adventures take you to
-              far-flung destinations, allowing you to wake up to new horizons
-              every day. Let the waves carry you to new horizons, where every
-              port becomes a gateway to unforgettable memories.
+            Embark on a safari odyssey that blends discovery, luxury, and awe-inspiring landscapes. Our safari adventures transport you to the heart of the wild, awakening to new wonders each day. Let the savannah be your guide, where every trail unveils a gateway to extraordinary memories.
             </p>
             <button>See the Offers</button>
           </div>

@@ -12,10 +12,10 @@ const Destinations = () => {
     window.scrollTo(0, 0);
   }, []);
   const {
-    europeDestinations,
-    asiaDestinations,
-    northAmericaDestinations,
-    otherContinentsDestinations,
+    kenyaDestinations,
+    tanzaniaDestinations,
+    zanzibarDestinations,
+    eastAfricaDestinations,
   } = data;
   return (
     <Container>
@@ -32,9 +32,9 @@ const Destinations = () => {
           }}
         >
           <h1>
-            Adventure awaits. <br /> Explore the world with us.
+            Adventure awaits. <br /> Explore the East Africa with us.
           </h1>
-          <p>Choose your favorite from 200+ Destinations Worldwide</p>
+          <p>Choose your favorite from East Africa's top Destinations</p>
           <div>
             <input type="text" placeholder="Choose Your Destination..." />
             <button>
@@ -57,9 +57,9 @@ const Destinations = () => {
         />
       </div>
       <div className="continent">
-        <h2 className="title">Europe</h2>
+        <h2 className="title">Kenya</h2>
         <div className="destinations">
-          {europeDestinations.map((item) => (
+          {kenyaDestinations.map((item) => (
             <div className="item">
               <img src={item.img} alt="" />
               <div className="details">
@@ -81,15 +81,15 @@ const Destinations = () => {
         {/* <p className="seeAll">See All...</p> */}
       </div>
       <div className="continent">
-        <h2 className="title">Asia</h2>
+        <h2 className="title">Tanzania</h2>
         <div className="destinations">
-          {asiaDestinations.map((item) => (
+          {tanzaniaDestinations.map((item) => (
             <Link to={`${item.link}`} className="link-styles">
               <div className="item">
                 <img src={item.img} alt="" />
                 <div className="details">
                   <h2>
-                    {item.city} <span>{item.country}</span>
+                    {item.city} {/* <span>{item.country}</span> */}
                   </h2>
                   <span>
                     <h3>
@@ -107,14 +107,14 @@ const Destinations = () => {
         {/* {<p className="seeAll">See All...</p>} */}
       </div>
       <div className="continent">
-        <h2 className="title">North America</h2>
+        <h2 className="title">Zanzibar</h2>
         <div className="destinations">
-          {northAmericaDestinations.map((item) => (
+          {zanzibarDestinations.map((item) => (
             <div className="item">
               <img src={item.img} alt="" />
               <div className="details">
                 <h2>
-                  {item.city} <span>{item.country}</span>
+                  {item.city} {/* <span>{item.country}</span> */}
                 </h2>
                 <span>
                   <h3>
@@ -130,10 +130,10 @@ const Destinations = () => {
         </div>
         {/* <p className="seeAll">See All...</p> */}
       </div>
-      <div className="continent">
-        <h2 className="title">Other Continents</h2>
+      <div className="continent mb-[60px]">
+        <h2 className="title">Rest of East Africa</h2>
         <div className="destinations">
-          {otherContinentsDestinations.map((item) => (
+          {eastAfricaDestinations.map((item) => (
             <div className="item">
               <img src={item.img} alt="" />
               <div className="details">

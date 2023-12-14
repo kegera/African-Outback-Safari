@@ -112,13 +112,13 @@ const Navbar = () => {
           </li>
         </Link>
         <div className="buttons">
-          {/* <Link
+           <Link
             to={"/sign-up"}
             className={activeTab === "sign-up" ? "activeTab" : "nonActive"}
             onClick={() => setActiveTab("sign-up")}
           >
-            <button>Sign Up</button>
-          </Link> */}
+            <button>Book Now!</button>
+          </Link>
           {/* <Link to={"/log-in"}>
             <button>Log In</button>
           </Link> */}
@@ -139,7 +139,7 @@ const Container = styled.div`
   padding: 1% 4%;
   position: fixed;
   top: 0;
-  height: 70px;
+  height: 95px;
   width: 100%;
   z-index: 100;
   overflow-x: visible;
